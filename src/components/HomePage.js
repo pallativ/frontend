@@ -3,8 +3,6 @@ import { Container, Typography, Button, Grid2, Card, CardContent, CardMedia } fr
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import technologyImg from "../assets/images/istockphoto-1202693974-1024x1024.jpg";
-import messagingImg from "../assets/images/istockphoto-1128284796-1024x1024.jpg";
 import ComputerIcon from "@mui/icons-material/Computer";
 import SchoolIcon from "@mui/icons-material/School";
 import ChatIcon from "@mui/icons-material/Chat";
@@ -32,15 +30,15 @@ const HomePage = () => {
       <Grid2 container spacing={4} justifyContent="center">
         {[
           {
-            title: "Technology Solutions", description: "Custom software, AI & automation.", image: technologyImg,
+            title: "Technology Solutions", description: "Custom software, AI & automation.",
             icon: <ComputerIcon fontSize="large" color="primary" />
           },
           {
             title: "Training & Upskilling", description: "Corporate IT training & skill development.",
-            image: technologyImg, icon: <SchoolIcon fontSize="large" color="primary" />
+            icon: <SchoolIcon fontSize="large" color="primary" />
           },
           {
-            title: "Messaging Tech", description: "WhatsApp API, SMS & chatbots.", image: technologyImg,
+            title: "Messaging Tech", description: "WhatsApp API, SMS & chatbots.",
             icon: <ChatIcon fontSize="large" color="primary" />
           },
         ].map((service, index) => (

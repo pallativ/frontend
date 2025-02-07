@@ -27,26 +27,26 @@
 
 // src/App.js
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Container } from '@mui/material';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
 import Services from './components/Services';
 // import CaseStudies from './components/CaseStudies';
-import Home from './components/Home';
 import Contact from './components/Contact';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
